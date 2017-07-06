@@ -106,7 +106,7 @@ namespace Autofac.Extensions.DependencyInjection
                 if (descriptor.ImplementationType != null)
                 {
                     // Test if the an open generic type is being registered
-                    var serviceTypeInfo = descriptor.ServiceType.GetTypeInfo();
+                    var serviceTypeInfo = descriptor.ServiceType;
                     if (serviceTypeInfo.IsGenericTypeDefinition)
                     {
                         builder
